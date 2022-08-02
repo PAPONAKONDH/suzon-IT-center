@@ -1,0 +1,745 @@
+:root{
+    --primary-color:#222;
+    --second-color:#de4644;
+    --common-color:#444;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+body{
+    font-family: 'open sans; sans-serif;
+}
+h2{
+    color:var(--primary-color) ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+h3{
+    color: var(--primary-color);
+    font-family:sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+h4{
+    color:var(--primary-color) ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+p{
+    color:var(--common-color) ;
+    
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.valign_center{
+    align-items: center;
+}
+.justify_content_center{
+           
+     justify-content: center;
+ }
+ .justify_content_spach_around{
+    justify-content: space-around;
+ }
+ .justify_content_spach_between_center{
+    justify-content: space-between;
+ }
+ /* =================================header ======================================*/
+#top_header{
+    background-color: yellowgreen;
+}
+ .header_left{
+    width: 33.333%;
+ }
+.center{
+    width: 33.333%;
+    box-shadow: 10px 10px 10px 10px yellow;
+  
+}
+.center h2{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #ff0000;
+    text-align: center;
+  
+}
+
+.center h2:hover{
+    color: #fff;
+}
+ .header_left img{
+    width: 200px;
+    margin: 15px 0 0 0;
+ }
+ .header_left p{
+    font-size: 20px;
+    color: red;
+    font-weight: 400;
+    margin-bottom: 15px;
+ }
+ .header_right{
+    width: 33.3%;
+    text-align: right;
+ }
+ .header_right h1{
+    color: deeppink;
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .header_right p{
+margin: 20px 60px;
+
+ }
+
+ .header_right  i{
+   color: springgreen;
+  font-size: 20px;
+  background-color: var(--common-color);
+  padding: 11px 15px;
+  margin: 0 -10px;
+  transition: .5s;
+
+}
+.header_right  i:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+.header_right p span{
+    background-color: #444;
+    color: #fff;
+    padding: 10px 10px;
+   font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+/*================================= menu_part====================================*/
+#main_menu{
+  
+}
+.menu_logo{
+   width:20%; 
+   padding: 30px 0;
+
+}
+
+.menu{
+    width:60% ;
+}
+.menu ul{
+    text-align: center;
+}
+.menu_icon ul li,
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a::after{
+content: '';
+position: absolute;
+width: 0;
+height: 5px;
+left: 0;
+bottom: 0;
+background-color: #ff0000;
+transition: .5s;
+}
+.menu ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    right: 0;
+    top: 0;
+    background-color: #ff0000;
+    transition: .5s;
+}
+.menu ul li:hover a::before,  
+.menu ul li:hover a:after{
+    width: 100%;
+}
+.menu_icon ul li a,
+.menu ul li a{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 20px 20px;
+    position: relative;
+    color: #000;
+    position: relative;
+    
+}
+.menu ul .active a,
+.menu ul li a:hover{
+    background-color:springgreen;
+    color: #ff0000;
+}
+/*================================= menu_part end====================================*/
+
+/*=============================== benar_items============================ */
+#benar{
+   
+}
+.benar_img{
+    width: 100%;
+    height: 600px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 1;
+}
+.benar_img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+#benar .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.benar_content{
+    max-width: 420px;
+    text-align: left;
+    margin-right:auto ;
+ 
+}
+.benar_content h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #ff0000;
+
+}
+.benar_content h2{
+    color: #fff;
+    padding: 12px 0 20px 0;
+}
+.benar_content p{
+    color: #fff;
+    line-height: 24px;
+    padding-bottom: 60px;
+}
+.benar_content  a{
+font-size: 16px;
+font-family: sans-serif;
+font-weight: 400;
+color: #fff;
+border: 1px solid #fff;
+background-color: rgba(0, 0, 0, .2);
+padding: 19px 25px;
+transition: .5s;
+}
+.benar_content .hello{
+    margin-right: 30px;
+}
+.benar_content .common:hover{
+    background-color: var(--second-color);
+    border: 1PX solid var(--second-color);
+}
+
+/* =============================design_items=========================== */
+#web_design{
+margin: 65px 0;
+}
+.web_design_left{
+    width: 50%;
+    padding: 0 px;
+}
+.web_design_left .cours_div{
+    border: 1px solid darkgreen;
+    margin: 0 15px;
+    background-color: wheat;
+    color: #ff0000;
+    padding: 10px;
+   float: left;
+   border-radius: 20px;
+}
+.web_design_left .design,
+.web_design_left h2{
+  padding: 15px 0;
+}
+.web_design_left .design{
+    font-size: 40px;
+    font-weight: 700;
+}
+.web_design_left p{
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    font-size: 16px;
+}
+.web_design_right{
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+}
+.web_design_right img{
+    width: 100%;
+    display: block;
+}
+/* ===========================over_vew============================ */
+#over_vew{
+    background-color:slategrey;
+    margin: 65px 0;
+    padding: 50px 0;
+}
+.over_vew_left{
+    width: 50%;
+    padding: 0 10px;
+}
+.over_vew_left h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 0;
+   
+}
+.over_vew_left p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #fff;
+}
+.over_vew_right{
+    width: 50%;
+    background-color:azure;
+    border-radius: 20px;
+    
+   }
+  .over_vew_right .heding_section{
+    text-align: center;
+    padding: 10px 0;
+    color: #444;
+  }
+  .code_img{
+    width: 25%;
+    padding:15px 20px;
+  }
+  .code_img img{
+    padding-left: 40px;
+  }
+  .over_vew_right p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    align-items: center;
+  }
+  .code_content{
+    width: 25%;
+  }
+/* ============================== course_cariculam======================== */
+#cariculam{
+    margin: 65px 0;
+    padding: 20px;
+  
+}
+
+.cariculam_left{
+    width: 50%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 50px ;
+    border-radius: 30px 0 0 30px;
+    }
+.cariculam_right .heding_section h1,
+.cariculam_left .heding_section h1{
+padding: 20px 0 30px 0;
+color: #de4644;
+}
+.cariculam_right{
+    width: 50%;
+    padding: 50px;
+    background-color: thistle;
+    border-radius: 0 30px 30px 0;
+}
+.cariculam_right .css span,
+.cariculam_right .html span{
+    color: #222;
+}
+.html{
+    width: 50%;
+}
+.html input,
+.css input,
+.html input{
+    margin: 15px 0;
+}
+.html span,
+.css span,
+.html span{
+    padding: 0px 20px;
+    color:whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+}
+.css{
+    width: 50%;
+   
+}
+/* ===========================================Any_people============================= */
+#Any_people{
+    padding: 50px 0;
+    margin: 65px 0;
+    background-color: darkgrey;
+}
+#Any_people .heding_section h1{
+    text-align: center;
+    padding: 40px 0;
+    color: teal;
+    font-size: 40px;
+    font-weight: 700;
+    
+
+}
+.Any_people_items{
+    width: 33.33%;
+    padding: 10px 10px;
+    text-align: center;
+    
+
+ }
+
+.img{
+    background-color:floralwhite;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.img h3{
+    padding: 20px 0;
+    font-size: 20px ;
+    font-weight: 500;
+
+}
+/*================================= where are your work =============================*/
+#where_work{
+    padding: 50px 0;
+    margin: 65px 0;
+   
+}
+.where_work_left{
+    width: 50%;
+    background-color:cornsilk ;
+   padding: 30px;
+  border-radius: 30px 0 0 30px;
+}
+.where_work_left_items{
+    width: 50%;
+    padding: 0 10px;
+
+}
+.bd{
+text-align: center;
+padding: 20px;
+background-color: whitesmoke;
+}
+.bd img{
+  padding: 25px 0;
+}
+
+#where_work .heding_section{
+    padding: 50px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: slategrey;
+
+}
+.bd p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 24px;
+}
+.where_work_right{
+    width: 50%;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 0 30px 30px 0;
+   
+}
+
+.where_work_right span{
+    margin: 0 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: antiquewhite;
+
+
+}
+.where_work_right .heding_section h1{
+    padding: 50px 0 0 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: slategrey;
+
+   
+}
+/* ==============================sujon_it_center======================= */
+#sunjon_it{
+   
+    margin-bottom: 65px;
+}
+#sunjon_it .heding_section h2{
+    text-align: center;
+    padding-bottom: 60px;
+    color: slategrey;
+    
+}
+    
+.sunjon_it_items{
+    width: 33.33%;
+    padding: 10px 10px;
+}
+.sunjon_it_items_conteant{
+    background-color: gray;
+    padding: 50px ;
+    border-radius: 20px;
+}
+
+
+.sunjon_it_items_conteant img{
+    padding: 10px 0;
+    width: 50px;
+
+
+}
+.sunjon_it_items_conteant h3{
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: yellow;
+}
+.sunjon_it_items_conteant p{
+    padding: 15px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color:#fff;
+    
+}
+ /*===================================== footer_benar================================ */
+ #footer_benar{
+    padding: 60px 0;
+    margin: 30px 0;
+ }
+ .footer_img{
+width: 100%;
+display: block;
+height: 500px !important;
+background-position:center !important;
+background-repeat: no-repeat;
+background-size: cover !important;
+position: relative;
+z-index: 1;
+
+ }
+.footer_img:after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, .7);
+z-index: -1;
+ }
+ .footer_benar_content{
+  text-align: center;
+ }
+.footer_benar_content h1{
+    text-align: center;
+    padding:  60px 0 30px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+
+}
+.footer_benar_content p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+   margin: 0 200px;
+
+}
+/* ==========================================admition_part_state======================================*/
+#admition_part{
+    padding: 65px 0;
+    background-color: rgba(0, 0, 0, .7);
+  
+}
+#admition_part h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+#admition_part p{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    padding:0 0 20px 0;
+}
+.admition_adress{
+    width: 33.333%;
+}
+.admition_cours h3,
+.admition h3,
+.admition_adress h3{
+padding: 15px 0;
+font-size: 25px ;
+font-family: sans-serif;
+font-weight: 500;
+color: #fff;
+text-align: center;
+
+}
+.admition_cours p,
+.admition p,
+.admition_adress p{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+.admition{
+    width: 33.333%;  
+    border: 1px solid #fff;
+    padding-bottom: 20x;
+}
+.admition_cours{
+    width: 33.333%;
+   }
+.cours_fee select{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--second-color);
+    text-align: center;
+    align-items: center;
+    margin: 25px 50px;
+}
+
+/* =====================================account_part=========================== */
+#account_part{
+    padding: 65px 0;
+    
+}
+#account_part .heding_section{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 0;
+    color: rgba(0, 0, 0, .9);
+}
+.bkash{
+    width: 33.33%;
+    text-align: center;
+}
+.nagod{
+    width: 33.33%;
+    text-align: center;
+
+}
+.roket{
+    width: 33.33%;
+    text-align: center;
+
+    
+}
+/* ======================================footer_part=============================== */
+#footer_part{
+    padding: 20px 0;
+    background-color:whitesmoke;
+}
+.footer_part_left{
+    width: 33.333%;
+    text-align: center;
+}
+.footer_part_left img{
+    width: 100px;
+    text-align: center;
+}
+.footer_part_meddle{
+    width: 33.333%;
+}
+.footer_part_meddle p{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+.footer_part_meddle span{
+    color: #ff0000;
+}
+.footer_part_right{
+    width: 33.333%;
+    text-align: center;
+}
+.footer_part_right i:hover{
+    background-color:#ff0000;
+    border: 1px solid #ff0000;
+}
+.footer_part_right i{
+    color: #000;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, .7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    color:#000;
+    transition: .5s;
+    }
+.footer_part_right a{
+   padding:  0 10px;
+
+}
+.footer_part_right h3{
+    padding: 15px 0;
+    color: teal;
+    transition: .5s;
+}
+.footer_part_right h3:hover{
+    color:blue;
+}
+
+/* ===============================================================finish_code=================================== */
+/* ===============================================================finish_code=================================== */
